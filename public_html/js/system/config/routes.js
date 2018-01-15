@@ -473,6 +473,9 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/medico/3/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'MedicoEdit3Controller', resolve: {auth: authenticationProfesorPromise}});
         $routeProvider.when('/medico/3/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'MedicoRemove3Controller', resolve: {auth: authenticationProfesorPromise}});
         $routeProvider.when('/medico/3/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'MedicoNew3Controller', resolve: {auth: authenticationProfesorPromise}});
+        //-----------4
+        $routeProvider.when('/medico/4/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'MedicoPList4Controller', resolve: {auth: authenticationAlumnoPromise}});
+        $routeProvider.when('/medico/4/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'MedicoView4Controller', resolve: {auth: authenticationAlumnoPromise}});
         //-----------5
         $routeProvider.when('/medico/5/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'MedicoView5Controller', resolve: {auth: authenticationVisitantePromise}});
 
