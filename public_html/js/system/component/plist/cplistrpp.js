@@ -9,7 +9,7 @@ moduloDirectivas.component('cplistrpp', {
         filterparams: '<',
         sfilterparams: '<'
     },
-    templateUrl: 'js/system/component/plist/cplistrpp.html',
+    templateUrl: 'js/system/component/plist/cplistrppjuego.html',
     controllerAs: 'crpp',
     controller: ['$location', function ($location) {
             var self = this;
