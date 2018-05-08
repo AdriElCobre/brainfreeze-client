@@ -3175,7 +3175,7 @@ tbody.collapse.in {
     clear: both;
     font-weight: normal;
     line-height: 1.42857;
-    color: white;
+/*    color: white;*/
     white-space: nowrap; }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
@@ -4813,7 +4813,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-default {
     border-color: #ddd;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 .panel-default > .panel-heading {
     color: #273570;

@@ -115,9 +115,11 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 15px;
     font-size: 1.1em;
     display: block;
+    color: white;
+    
 }
 #sidebar ul li a:hover {
     color: #7386D5;
@@ -236,6 +238,7 @@ body{
 footer{
     background-color: #253171;
     padding: 60px 0px;
+    
 }
 
 footer .menu li a{
@@ -336,7 +339,7 @@ h3 {
 #contenedor2{
 
     width: 100%;
-    height:100vh;
+    
 
 }
 
@@ -361,9 +364,9 @@ h3 {
 
 #btngestion{
 
-    margin: 8%;
+    margin: 4%;
     height: 172px;
-    min-width: 202px;
+    min-width: 22%;
 
 
 }
@@ -374,4 +377,15 @@ h3 {
    width: 100%;
    bottom: 0;
   
+}
+
+#margingestion{
+    margin-top: 10px;
+}
+
+#listadojuegos{
+    margin-top: 10%;
+}
+#contenedorlistado{
+    padding-bottom: 25%
 }
