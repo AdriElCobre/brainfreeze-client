@@ -2185,7 +2185,7 @@ pre code {
         margin-left: 8.33333%; }
 
     .col-lg-offset-2 {
-        margin-left: 16.66667%; }
+        margin-left: 33%; }
 
     .col-lg-offset-3 {
         margin-left: 25%; }
@@ -2935,7 +2935,9 @@ select[multiple].input-lg,
     opacity: 0.65;
     filter: alpha(opacity=65);
     -webkit-box-shadow: none;
-    box-shadow: none; }
+    box-shadow: none;
+    margin-left: 30%;
+}
 
 .btn-default {
     color: #333;
@@ -3175,7 +3177,7 @@ tbody.collapse.in {
     clear: both;
     font-weight: normal;
     line-height: 1.42857;
-/*    color: white;*/
+    /*    color: white;*/
     white-space: nowrap; }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
@@ -3817,7 +3819,9 @@ tbody.collapse.in {
     .navbar-form .form-group {
         display: inline-block;
         margin-bottom: 0;
-        vertical-align: middle; }
+        vertical-align: middle;
+        margin-bottom: 20px;
+    }
     .navbar-form .form-control {
         display: inline-block;
         width: auto;
