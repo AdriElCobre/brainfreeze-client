@@ -164,7 +164,7 @@
                                                 </div>
                                                 <p></p>
                                             </div>
-                                            
+
                                             <div role="tabpanel" id="pane1" class="tab-pane fade">
                                                 <div class="row">
                                                     <div class="col-md-5">
@@ -407,7 +407,7 @@
 
 
                                         <div id="cajas" ng-repeat="oBean in page| filter:searchText"  >
-                                            <a  href="{{ob}}/{{profile}}/view/{{oBean.id}}">
+                                            <a  href="{{ob}}/{{profile}}/viewgenerico/{{oBean.id}}">
                                                 <div ng-repeat="oMetap in metap" ng-if="oMetap.IsVisible && oMetap.Type == 'Id'"  class="text-right col-md-1">
                                                     <div ng-if="oMetap.IsVisible && oMetap.Type == 'Id'"><b>{{oBean[oMetap.Name]}}</b></div>
                                                 </div>

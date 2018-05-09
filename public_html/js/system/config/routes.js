@@ -101,6 +101,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
 
         //juego------------
         $routeProvider.when('/juego/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'JuegoView1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/juego/1/viewgenerico/:id', {templateUrl: 'js/app/juego/view.html', controller: 'JuegoViewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'JuegoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'JuegoEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'JuegoRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
