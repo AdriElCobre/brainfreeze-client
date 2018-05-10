@@ -400,3 +400,44 @@ h3 {
     width: 200px;
     margin-bottom: 20px;
 }
+
+#texto{
+    
+        margin-left: 2.75%;
+        color: #2f575d;
+}
+
+#infojuego{
+    
+
+    width: 90%;
+    height: auto;
+    
+    padding: 5px;
+
+    border-color: black;
+    border: 2px solid;
+
+
+    min-height: 200px;
+
+
+    display: inline-block;
+
+
+
+    
+}
+
+
+#barrajuego{
+    
+  z-index: 4;
+    background: #253171;
+       
+}
+
+#paneljuegos{
+    
+    border-color: black
+}
