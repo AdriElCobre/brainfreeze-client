@@ -50,7 +50,7 @@
                                 <!-- Collection of nav links and other content for toggling -->
                                 <div id="navbarCollapse" class="collapse navbar-collapse">
                                     <ul class="nav navbar-nav">
-                                        <li><a href="personaje/{{profile}}/x{{ob}}/plistx/{{bean.id}}">Personajes</a></li>
+                                        <li><a href="personaje/{{profile}}/x{{ob}}/plistxgenerico/{{bean.id}}">Personajes</a></li>
                                         <li><a href="historia/{{profile}}/x{{ob}}/plistx/{{bean.id}}">Historia</a></li>
                                         <li><a href="noticia/{{profile}}/x{{ob}}/plistx/{{bean.id}}">Noticias</a></li>
                                         <li><a href="guia/{{profile}}/x{{ob}}/plistx/{{bean.id}}">Guias</a></li>
@@ -83,7 +83,7 @@
                             <hr width="96%">
                             <div class="row">
 
-                                <div ng-include="'js/system/include/1.html'"></div>
+                                <div ng-include="'js/system/include/'+bean.id+'.html'"></div>
 
                                 <div class="col-lg-3">
 
@@ -91,11 +91,11 @@
                                         <h2 style="margin-left: 10%; font-size: 25px "><b>{{bean.nombre}}</b></h2>
                                         <hr width="90%">
 
-                                        <img style="max-width:90%;margin-left: 5%" src="images/{{bean.id}}.png" />
-                                        <p id="texto">Desarrolladora {{bean.desarrolladora}}</p>
-                                        <p id="texto">Fecha de lanzamiento {{bean.fechalanzamiento}}</p>
-                                        <p id="texto">Clasificación de edad +{{bean.edadminima}}</p>
-                                        <p id="texto">Precio de venta {{bean.precio}}</p> 
+                                        <img style="max-width:90%;margin-left: 5%;margin-bottom: 15%;" src="images/{{bean.id}}.png" />
+                                        <p id="texto"><b>Desarrolladora</b> {{bean.desarrolladora}}</p>
+                                        <p id="texto"><b>Fecha de lanzamiento</b> {{bean.fechalanzamiento}}</p>
+                                        <p id="texto"><b>Clasificación de edad</b> +{{bean.edadminima}}</p>
+                                        <p id="texto"><b>Precio de venta</b> {{bean.precio}}</p> 
                                     </div>
                                 </div>
                             </div>

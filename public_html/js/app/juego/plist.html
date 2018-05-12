@@ -405,22 +405,18 @@
 
                                     <div id="contenedor" class="contenedor">
 
-
+                                        
                                         <div id="cajas" ng-repeat="oBean in page| filter:searchText"  >
                                             <a  href="{{ob}}/{{profile}}/viewgenerico/{{oBean.id}}">
-                                                
+
                                                 <div ng-repeat="oMetap in metap" ng-if="oMetap.IsVisible && oMetap.Type == 'Id'"  class="text-right col-md-1">
-                                                    
+
                                                     <div ng-if="oMetap.IsVisible && oMetap.Type == 'Id'"><b>{{oBean[oMetap.Name]}}</b></div>
-                                                    
-                                                </div>
-                                                <div ng-init="setShowRemove(true)" ng-repeat="oMetap in metap" ng-if="oMetap.IsVisible && oMetap.Type != 'Id'"  class="text-right">
-                                                    <div ng-if="oMetap.IsVisible && oMetap.Type == 'String'" class="text-left">{{oBean[oMetap.Name]|clipString}}</div>
-                                                    <div ng-if="oMetap.IsVisible && oMetap.Type == 'Calculated'" class="text-left">{{oBean[oMetap.Name]|clipString}}</div>
-                                                    <div ng-if="oMetap.IsVisible && oMetap.Type == 'Boolean'" class="text-center" ng-bind-html="oBean[oMetap.Name] | booleanizate"></div>
 
                                                 </div>
                                                 
+                                                <div>{{oBean.nombre}}</div>
+                                                <img style="max-width:200px;max-height:200px ;" src="images/{{oBean.id}}.png" />
                                             </a>
                                         </div>
 
