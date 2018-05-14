@@ -136,6 +136,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
 
         //personaje------------
         $routeProvider.when('/personaje/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'PersonajeView1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/personaje/1/viewgenerico/:id', {templateUrl: 'js/app/personaje/1/view.html', controller: 'PersonajeViewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/personaje/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'PersonajeNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/personaje/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'PersonajeEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/personaje/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'PersonajeRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
