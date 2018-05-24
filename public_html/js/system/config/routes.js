@@ -91,6 +91,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/historia/1/xjuego/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'HistoriaXjuegoPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/historia/1/xjuego/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'HistoriaXjuegoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/historia/1/xjuego/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'HistoriaXjuegoEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/historia/1/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/historia/1/xjuego/plist.html', controller: 'HistoriaXjuegoPListGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
 
         //clase------------
         $routeProvider.when('/clase/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'ClaseView1Controller', resolve: {auth: authenticationAdministratorPromise}});

@@ -40,6 +40,7 @@ moduloJuego.controller('JuegoView1Controller',
                 $scope.status = null;
                 $scope.debugging = constantService.debugging();
                 //---
+
                 serverCallService.getOne($scope.ob, $scope.id).then(function (response) {
                     if (response.status == 200) {
                         if (response.data.status == 200) {
@@ -65,4 +66,6 @@ moduloJuego.controller('JuegoView1Controller',
                     $location.path('/home');
                 };
             }
+
+
         ]);
