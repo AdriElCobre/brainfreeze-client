@@ -29,58 +29,71 @@
 -->
 <menu></menu>
 <div id="wrapper" ng-cloak>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
 
-                    <div class="panel-body">
+    <div class="space-huge fondo"></div>
 
+    <div class="row" ng-repeat="oBean in page| filter:searchText">
 
-                        <div class="row">
-                            <div class="col-xs-12" ng-if="!status">
+        <div class="ImageNav-absolutePositionContainer">
+            <div class="ImageNav">
+                <div class="ImageNav-container">
+                    <div class="ImageNav-list">
+                        <div class="ImageNav-listItem">
+                            <p class="ImageNav-link">
+                                <img class="ImageNav-image" src="{{oBean.logo}}">
 
+                            </p>
 
-                                <div id="datos" ng-if="!status">
-
-                                    <div id="datos" ng-if="!status">
-
-
-
-
-                                        <div id="contenedor" class="contenedor">
-
-
-                                            <div id="cajashistoria" ng-repeat="oBean in page| filter:searchText"  >
-
-                                                <div class="panel-body">
-                                                    <div class="row titulo">
-                                                        <img style="max-width:50% ;" src="images/{{oBean.id}}.png" />
-                                                    </div>
-                                                    
-                                                    
-
-
-                                                    <div style="text-align: center">{{oBean.nombre}}</div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                        </div>   
                     </div>
+
                 </div>
             </div>
+
         </div>
+        <div class="car"></div>
+        <div class="Pane">
+            <div class="Pane-bg">
+                <div class="Pane-content">
+                    <div class="contain-huge">
+                        <div class="space-huge"></div>
+                        <div class="space-huge"></div>
+                        <div class="gutter-large Grid-2of5">
+                            <div class="Image">
+                                <div class="Image-size"></div>
+                                <img class="Image-image" src="{{oBean.caratula}}">
+
+                            </div>
+                            <div class="space-huge"></div>
+                        </div>
+                        <div class="Grid-3of5">
+                            <div class="font-semp-xLarge-white">{{oBean.titulo}}</div>
+                            <div class="space-rhythm-small"></div>
+                            <div class="font-bliz-light-medium-beige">Lanzamiento: {{oBean.fechalanzamiento}}</div>
+                            <div class="font-bliz-light-medium-beige">Lanzamiento: {{id}}</div>
+                            <div class="space-rhythm-large"></div>
+                            <div class="font-title-medium-onDark">{{oBean.descripcion}}</div>
+                            <div class="space-medium"></div>
+
+                        </div>
+                        <div class="space-huge"></div>
+                        <div class="space-huge"></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
     </div>
 </div>
+
+
+
 
 <div class="panel-footer" style="font-family: Questrial, serif;" ng-include="'js/system/include/footer.html'"></div>
 
