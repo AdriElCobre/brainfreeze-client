@@ -77,90 +77,8 @@
                                                             orderParams="orderParams">
                                                         </cplistrppjuego>
                                                     </div>
-                                                    <div id="filtrarpor"><u>Filtrar por</u></div>
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-md-3 col-sm-4">
-                                                            <form class="navbar-form navbar-left" role="form" id="typeFilterForm">
-                                                                <select class="navbar-form navbar-left" ng-model="filterType" convert-to-number id="filterSelection">
-                                                                    <option value="0" ng-repeat="f in metap|filter:{Type:'Id'}">Filtrar por {{f.LongName}}</option>
-                                                                    <option value="1" ng-repeat="f in metap|filter:{Type:'String'}">Filtrar por {{f.LongName}}</option>
-                                                                </select>
-                                                            </form>
-                                                        </div>
-                                                        <div class="col-md-12 col-md-3 col-sm-4">
-                                                            <div ng-show="filterType == 0">
-                                                                <cplistfilterbyinteger
-                                                                    url="url"
-                                                                    fields="metap"
-                                                                    rpp="rpp"
-                                                                    numpage="numpage"
-                                                                    orderparams="orderParams"
-                                                                    filterparams="filterParams">
-                                                                </cplistfilterbyinteger>
-                                                            </div>
-                                                            <p></p>
-                                                            <div ng-show="filterType == 1">
-                                                                <cplistfilterbystring
-                                                                    url="url"
-                                                                    fields="metap"
-                                                                    rpp="rpp"
-                                                                    numpage="numpage"
-                                                                    orderparams="orderParams"
-                                                                    filterparams="filterParams">
-                                                                </cplistfilterbystring>
-                                                            </div>
-                                                            <p></p>
-                                                            <div ng-show="filterType == 2">
-                                                                <cplistfilterbyinteger
-                                                                    url="url"
-                                                                    fields="metap"
-                                                                    rpp="rpp"
-                                                                    numpage="numpage"
-                                                                    orderparams="orderParams"
-                                                                    filterparams="filterParams">
-                                                                </cplistfilterbyinteger>
-                                                            </div>
-                                                            <p></p>
-                                                            <div ng-show="filterType == 4">
-                                                                <cplistfilterbydate
-                                                                    url="url"
-                                                                    fields="metap"
-                                                                    rpp="rpp"
-                                                                    numpage="numpage"
-                                                                    orderparams="orderParams"
-                                                                    filterparams="filterParams">
-                                                                </cplistfilterbydate>
-                                                            </div>
-                                                            <p></p>
-                                                            <div ng-repeat="f in metap|filter:{Type:'ForeignObject'}">
-                                                                <div ng-show="filterType == 7">
-                                                                    <cplistfilterbyforeign
-                                                                        url="url"
-                                                                        field="f"
-                                                                        rpp="rpp"
-                                                                        numpage="numpage"
-                                                                        orderparams="orderParams"
-                                                                        filterparams="filterParams"
-                                                                        profile="profile">
-                                                                    </cplistfilterbyforeign>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-offset-2 col-md-offset-12 col-sm-offset-12">
-                                                            <cplistinfojuego url="url"
-                                                                             numpage="numpage"
-                                                                             rpp="rpp"
-                                                                             registers="registers"
-                                                                             orderparams="orderParams"
-                                                                             filterparams="filterParams"
-                                                                             searchtext="searchText">
-                                                            </cplistinfojuego>
-                                                        </div>
-
-
-                                                    </div>
+                                                    
+                                                    
                                                 </div>
                                                 <p></p>
                                             </div>
@@ -405,12 +323,12 @@
 
                                     <div id="contenedor" class="contenedor">
 
-                                        
+
                                         <div id="cajas" ng-repeat="oBean in page| filter:searchText"  >
                                             <a  href="{{ob}}/{{profile}}/viewgenerico/{{oBean.id}}">
 
-                                                
-                                                
+
+
                                                 <div style="text-align: center">{{oBean.nombre}}</div>
                                                 <img style="max-width:100%;max-height:100% ;" src="images/{{oBean.id}}.png" />
                                             </a>

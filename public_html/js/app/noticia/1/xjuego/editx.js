@@ -42,6 +42,16 @@ moduloNoticia.controller('NoticiaXjuegoEdit1Controller',
                 $scope.status = null;
                 $scope.debugging = constantService.debugging();
                 //---
+                $(document).ready(function () {
+                    $('#summernote').summernote({
+
+                        height: 300, // set editor height
+                        minHeight: null, // set minimum height of editor
+                        maxHeight: null, // set maximum height of editor
+                        focus: true
+
+                    });
+                });
                 if ($scope.xob && $scope.xid) {
                     $scope.linkedbean = null;
                     serverCallService.getOne($scope.xob, $scope.xid).then(function (response) {
