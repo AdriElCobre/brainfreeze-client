@@ -49,7 +49,7 @@
                         <div id="navbarCollapse" class="collapse navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <p>Personajes</p>
-                                
+
                             </ul>
 
                         </div>
@@ -70,25 +70,25 @@
 
 
                                 <div id="datos" ng-if="!status">
-                                    
-                                        <div id="cajaswow" ng-repeat="oBean in page| filter:searchText"  >
-                                            <div id="wowfoto">
-                                               <img id="wowfoto" src="images/personajes/{{oBean.id}}.jpg" /> 
-                                            </div>
-                                            <div id="wowpj">
-                                                <a  href="{{ob}}/{{profile}}/viewgenerico/{{oBean.id}}">
-                                                    <p>{{oBean.nombre}}</p>
-                                                </a>
-                                            </div>
+
+                                    <div id="cajaswow" ng-repeat="oBean in page| filter:searchText"  >
+                                        <div id="wowfoto">
+                                            <img id="wowfoto" src="images/personajes/{{oBean.id}}.jpg" /> 
                                         </div>
-                                    
+                                        <div id="wowpj">
+                                            <a  href="{{ob}}/{{profile}}/viewgenerico/{{oBean.id}}">
+                                                <p>{{oBean.nombre}}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div><a ng-click="back()">Volver</a></div>
+                <a style="position: relative;left: 45%; margin-bottom: 3%" class="btn btn-default" ng-click="back()">Volver</a>
             </div>
         </div>
     </div>

@@ -39,27 +39,22 @@
                         <div id="contenedor" class="contenedor">
 
 
-                            <div class="post" ng-repeat="oBean in page| filter:searchText"  >
+                            <div class="post" >
                                 <div class="wrap-ut pull-left">
                                     <div class="userinfo pull-left">
-                                        
 
-                                        
+
+
                                     </div>
                                     <div class="posttext pull-left">
-                                        <h2><a style='color: #337ab7' href="{{ob}}/{{profile}}/viewgenerico/{{oBean.id}}" ng-click="count = count + 1" ng-init="count=0">{{oBean.titulo}}</a></h2>
-                                        <p>{{oBean.texto | limitTo:500}}. . .</p>
+                                        <h2><p style='color: #337ab7'>{{bean.titulo}}</p></h2>
+
+                                        <p>{{bean.texto}}</p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
-                                <div class="postinfo pull-left">
-                                    <div class="comments">
-                                        <div class="commentbg">
-                                            {{oBean.link_comentarionoticia}}
-                                            <div class="mark"></div>
-                                        </div>
-
-                                    </div>
+                                <div class="postinfo pull-left" style='height: 90vh'>
+                                    
                                     <div class="views"><i class="fa fa-eye"></i> {{count}}</div>
                                     <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>                                    
                                 </div>

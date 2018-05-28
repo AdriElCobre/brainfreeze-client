@@ -106,8 +106,8 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/juego/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'JuegoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'JuegoEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'JuegoRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/juego/1/plist/:page?/:rpp?', {templateUrl: 'js/app/juego/plist.html', controller: 'JuegoPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/juego/1/plistgenerico/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'JuegoPListGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/juego/1/plistgenerico/:page?/:rpp?', {templateUrl: 'js/app/juego/plist.html', controller: 'JuegoPListGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/juego/1/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'JuegoPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/xusuario/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'JuegoXusuarioPlist1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/xusuario/newx/:id', {templateUrl: 'js/system/shared/app/newx.html', controller: 'JuegoXusuarioNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/xusuario/editx/:id/:xid', {templateUrl: 'js/system/shared/app/editx.html', controller: 'JuegoXusuarioEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -153,6 +153,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
 
         //noticia------------
         $routeProvider.when('/noticia/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'NoticiaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/noticia/1/viewgenerico/:id', {templateUrl: 'js/app/noticia/1/view.html', controller: 'NoticiaViewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'NoticiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'NoticiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'NoticiaRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});

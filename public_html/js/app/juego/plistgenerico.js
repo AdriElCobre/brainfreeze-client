@@ -30,7 +30,7 @@ moduloJuego.controller('JuegoPListGenerico1Controller',
         ['$scope', '$routeParams', '$location', 'serverCallService', 'toolService', 'constantService',
             function ($scope, $routeParams, $location, serverCallService, toolService, constantService) {
                 $scope.ob = "juego";
-                $scope.op = "plist";
+                $scope.op = "plistgenerico";
                 $scope.profile = 1;
                 //---
                 $scope.url = $scope.ob + '/' + $scope.profile + '/' + $scope.op;

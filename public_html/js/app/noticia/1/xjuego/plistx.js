@@ -61,6 +61,10 @@ moduloNoticia.controller('NoticiaXjuegoPList1Controller',
                         });
                     }
                     ;
+
+                    
+
+
                     serverCallService.getCountX($scope.ob, $scope.xob, $scope.xid, $scope.filterParams).then(function (response) {
                         if (response.status == 200) {
                             $scope.registers = response.data.json;
