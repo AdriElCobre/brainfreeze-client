@@ -66,3 +66,8 @@ moduloNoticia.controller('NoticiaView1Controller',
                 };
             }
         ]);
+        
+        
+
+
+

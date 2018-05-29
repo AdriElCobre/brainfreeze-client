@@ -72,7 +72,7 @@ moduloSistema.controller('LoginController',
                             sessionService.setSessionInfo(response.data.json.data);
                             $scope.session_info = sessionService.getSessionInfo();
                             $scope.isSessionActive = sessionService.isSessionActive();
-                            $location.path('juego/1/plist');
+                            $location.path('juego/1/plistgenerico');
                         } else {
                             sessionService.setSessionInactive();
                             $scope.session_info = sessionService.getSessionInfo();

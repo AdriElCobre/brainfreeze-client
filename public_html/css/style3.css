@@ -14,7 +14,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #505050;
 }
 
 a, a:hover, a:focus {
@@ -446,7 +446,7 @@ h3 {
 #cajaswow{
 
 
-    margin: 1.7vw;
+    margin: 1.62vw;
     border-color: black;
     border: 2px solid;
     min-height: 310px;
@@ -967,7 +967,7 @@ img {
 .post .postinfo {
     width: 15%;
     border-left: solid 1px #ccc6c6;
-        height: 34vh;
+    height: 34vh;
 }
 
 .post .comments {
@@ -1016,3 +1016,92 @@ img {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+.postinfobot {
+    border-top: solid 1px #f1f1f1;
+    line-height: 50px;
+    margin-left: 5%;
+
+}
+
+.postinfobot .likeblock {
+    width: 20%;
+}
+
+.up {
+    color: #1abc9c;
+    font-size: 20px;
+}
+
+.up i, .down i {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.down {
+    color: #db7a7a;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.up i, .down i {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.postinfobot .prev {
+    width: 30px;
+}
+
+.postinfobot .prev a {
+    font-size: 18px;
+    color: #bdc3c7;
+}
+
+.postinfobot .posted {
+    width: 300px;
+    margin-left: 18px;
+    font-size: 16px;
+    color: #605e5b;
+    font-family: 'Open Sans Regular', sans-serif;
+}
+
+.postinfobot .posted i {
+    font-size: 20px;
+    color: #605e5b;
+    padding-right: 8px;
+}
+
+.postinfobot .next {
+    width: 90px;
+    text-align: right;
+}
+
+.postinfobot .next a {
+    font-size: 18px;
+    color: #bdc3c7;
+}
+
+.postinfobot .next a i {
+    padding-right: 18px;
+}
+
+.postinfobot .next a {
+    font-size: 18px;
+    color: #bdc3c7;
+}
+
+.postinfobot .next a i {
+    padding-right: 18px;
+}
+
