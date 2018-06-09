@@ -237,6 +237,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         //comentarioguia------------
         $routeProvider.when('/comentarioguia/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'ComentarioguiaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/comentarioguia/1/newgenerico/:id?', {templateUrl: 'js/app/comentarioguia/1/xguia/newedit.html', controller: 'ComentarioguiaNewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'ComentarioguiaRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'ComentarioguiaPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -246,6 +247,8 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/comentarioguia/1/xguia/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'ComentarioguiaXguiaPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/xguia/newx/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaXguiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/xguia/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaXguiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
+
+        $routeProvider.when('/comentarioguia/4/newgenerico/:id?', {templateUrl: 'js/app/comentarioguia/4/xguia/newedit.html', controller: 'ComentarioguiaNewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
 
 
         $routeProvider.otherwise({redirectTo: '/'});
