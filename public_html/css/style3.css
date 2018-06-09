@@ -954,6 +954,7 @@ img {
     font-family: 'Open Sans Light', sans-serif;
     line-height: 25px;
     margin-left: 5%;
+    min-width: 75vw;
 }
 
 .post h2 {

@@ -177,6 +177,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
 
         $routeProvider.when('/noticia/4/viewgenerico/:id', {templateUrl: 'js/app/noticia/4/view.html', controller: 'NoticiaViewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
         $routeProvider.when('/noticia/4/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/noticia/4/xjuego/plist.html', controller: 'NoticiaXjuegoPListGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
+        $routeProvider.when('/noticia/4/newgenerico/:id?', {templateUrl: 'js/app/guia/4/xjuego/newedit.html', controller: 'NoticiaNewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
 
 
         //guia------------
