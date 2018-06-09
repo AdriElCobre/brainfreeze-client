@@ -162,7 +162,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         //noticia------------
         $routeProvider.when('/noticia/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'NoticiaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/viewgenerico/:id', {templateUrl: 'js/app/noticia/1/view.html', controller: 'NoticiaViewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/noticia/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'NoticiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/noticia/1/new/:id?', {templateUrl: 'js/app/guia/1/xjuego/newedit.html', controller: 'NoticiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/newgenerico/:id?', {templateUrl: 'js/app/guia/1/xjuego/newedit.html', controller: 'NoticiaNewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'NoticiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'NoticiaRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -183,7 +183,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         //guia------------
         $routeProvider.when('/guia/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'GuiaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/viewgenerico/:id', {templateUrl: 'js/app/guia/1/view.html', controller: 'GuiaViewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/guia/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'GuiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/guia/1/new/:id?', {templateUrl: 'js/app/guia/1/xjuego/newedit.html', controller: 'GuiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/newgenerico/:id?', {templateUrl: 'js/app/guia/1/xjuego/newedit.html', controller: 'GuiaNewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'GuiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'GuiaRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -219,7 +219,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
 
         //comentarionoticia------------
         $routeProvider.when('/comentarionoticia/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'ComentarionoticiaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/comentarionoticia/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarionoticiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/comentarionoticia/1/new/:id?', {templateUrl: 'js/app/comentarionoticia/1/xnoticia/newedit.html', controller: 'ComentarionoticiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarionoticia/1/newgenerico/:id?', {templateUrl: 'js/app/comentarionoticia/1/xnoticia/newedit.html', controller: 'ComentarionoticiaNewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarionoticia/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarionoticiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarionoticia/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'ComentarionoticiaRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -236,7 +236,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
 
         //comentarioguia------------
         $routeProvider.when('/comentarioguia/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'ComentarioguiaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/comentarioguia/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/comentarioguia/1/new/:id?', {templateUrl: 'js/app/comentarioguia/1/xguia/newedit.html', controller: 'ComentarioguiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/newgenerico/:id?', {templateUrl: 'js/app/comentarioguia/1/xguia/newedit.html', controller: 'ComentarioguiaNewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'ComentarioguiaRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});

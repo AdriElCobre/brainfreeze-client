@@ -357,7 +357,7 @@ h3 {
 
 
     display: inline-block;
-
+    box-shadow: 4px 6px 11px 4px #959696;
 
 }
 
@@ -367,6 +367,7 @@ h3 {
     margin: 4%;
     height: 172px;
     min-width: 22%;
+    box-shadow: 4px 6px 11px 4px #959696;
 
 
 }
@@ -415,6 +416,27 @@ h3 {
 
     padding: 5px;
 
+    
+
+
+    min-height: 200px;
+
+
+    display: inline-block;
+    margin-bottom: 5%;
+
+
+
+}
+
+#infojuego2{
+
+
+    width: 90%;
+    height: auto;
+
+    padding: 5px;
+
     border-color: black;
     border: 2px solid;
 
@@ -453,7 +475,7 @@ h3 {
     min-width:270px; 
     display: inline-block;
     position: relative;
-
+    box-shadow: 2px 3px 7px 4px #959696;
 
 }
 
@@ -881,6 +903,7 @@ img {
 
 .fondo{
     background-image: url("http://127.0.0.1:8080/brainfreeze/public_html/images/fondo.jpg");
+        min-height: 41vh;
 }
 
 
