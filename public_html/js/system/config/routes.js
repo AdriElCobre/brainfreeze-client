@@ -92,6 +92,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/historia/1/xjuego/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'HistoriaXjuegoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/historia/1/xjuego/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'HistoriaXjuegoEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/historia/1/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/historia/1/xjuego/plist.html', controller: 'HistoriaXjuegoPListGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/historia/4/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/historia/4/xjuego/plist.html', controller: 'HistoriaXjuegoPListGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
 
         //clase------------
         $routeProvider.when('/clase/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'ClaseView1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -102,16 +103,20 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
 
         //juego------------
         $routeProvider.when('/juego/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'JuegoView1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/juego/1/viewgenerico/:id', {templateUrl: 'js/app/juego/view.html', controller: 'JuegoViewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/juego/1/viewgenerico/:id', {templateUrl: 'js/app/juego/1/view.html', controller: 'JuegoViewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'JuegoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'JuegoEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'JuegoRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/juego/1/plistgenerico/:page?/:rpp?', {templateUrl: 'js/app/juego/plist.html', controller: 'JuegoPListGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/juego/1/plistgenerico/:page?/:rpp?', {templateUrl: 'js/app/juego/1/plist.html', controller: 'JuegoPListGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'JuegoPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/xusuario/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'JuegoXusuarioPlist1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/xusuario/newx/:id', {templateUrl: 'js/system/shared/app/newx.html', controller: 'JuegoXusuarioNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/juego/1/xusuario/editx/:id/:xid', {templateUrl: 'js/system/shared/app/editx.html', controller: 'JuegoXusuarioEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
 
+        $routeProvider.when('/juego/4/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'JuegoView4Controller', resolve: {auth: authenticationAlumnoPromise}});
+        $routeProvider.when('/juego/4/viewgenerico/:id', {templateUrl: 'js/app/juego/4/view.html', controller: 'JuegoViewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
+        $routeProvider.when('/juego/4/plistgenerico/:page?/:rpp?', {templateUrl: 'js/app/juego/4/plist.html', controller: 'JuegoPListGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
+        $routeProvider.when('/juego/4/xusuario/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'JuegoXusuarioPlist4Controller', resolve: {auth: authenticationAlumnoPromise}});
 
         //plataforma------------
         $routeProvider.when('/plataforma/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'PlataformaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -150,6 +155,9 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/personaje/1/xclase/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'PersonajeXClaseNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/personaje/1/xclase/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'PersonajeXClaseEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
 
+        $routeProvider.when('/personaje/4/viewgenerico/:id', {templateUrl: 'js/app/personaje/4/view.html', controller: 'PersonajeViewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
+        $routeProvider.when('/personaje/4/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/personaje/4/xjuego/plist.html', controller: 'PersonajeXjuegoPListGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
+
 
         //noticia------------
         $routeProvider.when('/noticia/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'NoticiaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -161,10 +169,14 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/noticia/1/xjuego/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'NoticiaXjuegoPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/noticia/1/xjuego/plist.html', controller: 'NoticiaXjuegoPListGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/xjuego/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'NoticiaXjuegoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/noticia/1/xjuego/newxgenerico/:id?', {templateUrl: 'js/app/noticia/1/xjuego/newedit.html', controller: 'NoticiaXjuegoNewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/xjuego/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'NoticiaXjuegoEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/xusuario/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'NoticiaXusuarioPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/xusuario/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'NoticiaXusuarioNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/noticia/1/xusuario/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'NoticiaXusuarioEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
+
+        $routeProvider.when('/noticia/4/viewgenerico/:id', {templateUrl: 'js/app/noticia/4/view.html', controller: 'NoticiaViewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
+        $routeProvider.when('/noticia/4/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/noticia/4/xjuego/plist.html', controller: 'NoticiaXjuegoPListGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
 
 
         //guia------------
@@ -176,11 +188,15 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/guia/1/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'GuiaPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/xjuego/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'GuiaXjuegoPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/guia/1/xjuego/plist.html', controller: 'GuiaXjuegoPListGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/guia/1/xjuego/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'GuiaXjuegoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/guia/1/xjuego/newx/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'GuiaXjuegoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/guia/1/xjuego/newxgenerico/:id?', {templateUrl: 'js/app/guia/1/xjuego/newedit.html', controller: 'GuiaXjuegoNewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/xjuego/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'GuiaXjuegoEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/xusuario/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'GuiaXusuarioPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/xusuario/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'GuiaXusuarioNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/guia/1/xusuario/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'GuiaXusuarioEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        
+        $routeProvider.when('/guia/4/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/guia/4/xjuego/plist.html', controller: 'GuiaXjuegoPListGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
+        $routeProvider.when('/guia/4/viewgenerico/:id', {templateUrl: 'js/app/guia/4/view.html', controller: 'GuiaViewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
 
         //generojuego------------
         $routeProvider.when('/generojuego/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'GenerojuegoView1Controller', resolve: {auth: authenticationAdministratorPromise}});

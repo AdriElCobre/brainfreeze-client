@@ -1,0 +1,133 @@
+<!--
+/*
+ * Copyright (c) 2017 by Rafael Angel Aznar Aparici (rafaaznar at gmail dot com)
+ *
+ * TROLLEYES helps you to learn how to develop easily AJAX web applications
+ *
+ * Sources at https://github.com/rafaelaznar/trolleyes
+ *
+ * TROLLEYES is distributed under the MIT License (MIT)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+-->
+<menu></menu>
+<div id="wrapper" ng-cloak>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+
+                        <div id="contenedor" class="contenedor">
+
+
+                            <div class="post" >
+                                <div class="wrap-ut pull-left" style='width: 90%;'>
+                                    <div class="userinfo pull-left">
+
+
+
+                                    </div>
+                                    <div class="posttext pull-left" style="width: auto;">
+                                        <h2><p style='color: #337ab7'>{{beannoticia.titulo}}</p></h2>
+
+                                        <p>{{beannoticia.texto}}</p>
+                                    </div>
+                                    <div class="postinfobot">
+
+                                        <div class="likeblock pull-left">
+                                            <a href="#" class="up"><i class="fa fa-thumbs-o-up" style="color:#658b6e"></i>25</a>
+                                            <a href="#" class="down"><i class="fa fa-thumbs-o-down" style="color:#db7a7a"></i>3</a>
+                                        </div>
+
+
+
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posteado el : {{beannoticia.fechacreacion}}</div>
+
+
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div id="contenedor" style="width: 80%;position: relative;left: 20%;margin-top: 5%;" class="contenedor" ng-controller="ComentarioguiaXguiaPList1Controller" >
+
+
+                            <div class="post" ng-repeat="oBean in page| filter:searchText"  >
+                                <div class="wrap-ut pull-left" style='width: 90%;'>
+                                    <div class="userinfo pull-left">
+
+
+
+                                    </div>
+                                    <div class="posttext pull-left">
+                                        <h2><p style='color: #337ab7'>{{oBean.titulo}}</p></h2>
+
+                                        <p>{{oBean.texto}}</p>
+                                    </div>
+                                    <div class="postinfobot">
+
+                                        <div class="likeblock pull-left">
+                                            <a href="#" class="up"><i class="fa fa-thumbs-o-up" style="color:#658b6e"></i>25</a>
+                                            <a href="#" class="down"><i class="fa fa-thumbs-o-down" style="color:#db7a7a"></i>3</a>
+                                        </div>
+
+
+
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posteado el : {{oBean.fechacreacion}}</div>
+
+
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a style="position: relative;left: 47%; margin-bottom: 3%" class="btn btn-default" ng-click="back()">Volver</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="panel-footer" style="font-family: Questrial, serif;" ng-include="'js/system/include/footer.html'"></div>
+
+
+
+
+
+
+

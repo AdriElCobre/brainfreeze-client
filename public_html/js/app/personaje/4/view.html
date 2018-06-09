@@ -1,0 +1,110 @@
+<!--
+/*
+ * Copyright (c) 2017 by Rafael Angel Aznar Aparici (rafaaznar at gmail dot com)
+ *
+ * TROLLEYES helps you to learn how to develop easily AJAX web applications
+ *
+ * Sources at https://github.com/rafaelaznar/trolleyes
+ *
+ * TROLLEYES is distributed under the MIT License (MIT)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+-->
+<menu></menu>
+<div id="wrapper" ng-cloak>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+
+
+
+
+                    <div id="contenedor" class="contenedor Box-paper">
+
+
+
+
+                        <h1 style="margin-left: 2%;"><b>{{bean.nombre}}</b></h1>
+                        <hr width="96%">
+                        <div class="row">
+
+                            <div class="col-lg-8">
+
+                                <p id="texto"> {{bean.descripcion}}</p>
+
+                                <img id="myImg" src="images/personajes/{{bean.id}}.jpg" alt="{{bean.nombre}}" width="300" height="200">
+
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+                                    <span class="close">&times;</span>
+                                    <img class="modal-content" id="img01">
+                                    <div id="caption"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div id="infojuego" class="Box--paper">
+                                    <h2 style="margin-left: 10%; font-size: 25px "><b>{{bean.faccion}}</b></h2>
+                                    <hr width="90%">
+
+                                    <img style="max-width:90%;max-height: 50;margin-left: 5%;margin-bottom: 15%;" src="images/faccion/{{bean.faccion}}.png" />
+                                    <p id="texto"><b>Nombre</b> {{bean.nombre}}</p>
+                                    <p id="texto"><b>Sexo</b> {{bean.sexo}}</p>
+                                    <p id="texto"><b>Raza</b> {{bean.raza}}</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a style="position: relative;left: 45%; margin-bottom: 3%" class="btn btn-default" ng-click="back()">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel-footer" style="font-family: Questrial, serif;" ng-include="'js/system/include/footer.html'"></div>
+
+
+<script>
+// Get the modal
+            var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+// Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+</script>
