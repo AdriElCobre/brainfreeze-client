@@ -27,10 +27,10 @@
  */
 'use strict';
 
-moduloComentarioguia.controller('ComentarioguiasNew1Controller',
+moduloComentarioguia.controller('ComentarioguiaNew1Controller',
         ['$scope', '$routeParams', '$location', 'serverCallService', '$filter', '$uibModal', 'sessionService', '$route', 'toolService', 'constantService',
             function ($scope, $routeParams, $location, serverCallService, $filter, $uibModal, sessionService, $route, toolService, constantService) {
-                $scope.ob = "comentarioguias";
+                $scope.ob = "comentarioguia";
                 $scope.op = "new";
                 $scope.profile = 1;
                 //---

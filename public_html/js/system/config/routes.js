@@ -177,7 +177,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
 
         $routeProvider.when('/noticia/4/viewgenerico/:id', {templateUrl: 'js/app/noticia/4/view.html', controller: 'NoticiaViewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
         $routeProvider.when('/noticia/4/xjuego/plistxgenerico/:id/:page?/:rpp?', {templateUrl: 'js/app/noticia/4/xjuego/plist.html', controller: 'NoticiaXjuegoPListGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
-        $routeProvider.when('/noticia/4/newgenerico/:id?', {templateUrl: 'js/app/guia/4/xjuego/newedit.html', controller: 'NoticiaNewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
+        $routeProvider.when('/noticia/4/newgenerico/:id?', {templateUrl: 'js/app/noticia/4/xjuego/newedit.html', controller: 'NoticiaNewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
 
 
         //guia------------
@@ -220,6 +220,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         //comentarionoticia------------
         $routeProvider.when('/comentarionoticia/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'ComentarionoticiaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarionoticia/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarionoticiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/comentarionoticia/1/newgenerico/:id?', {templateUrl: 'js/app/comentarionoticia/1/xnoticia/newedit.html', controller: 'ComentarionoticiaNewGenerico1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarionoticia/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarionoticiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarionoticia/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'ComentarionoticiaRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarionoticia/1/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'ComentarionoticiaPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -229,6 +230,8 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/comentarionoticia/1/xnoticia/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'ComentarionoticiaXnoticiaPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarionoticia/1/xnoticia/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarionoticiaXnoticiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarionoticia/1/xnoticia/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarionoticiaXnoticiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
+
+        $routeProvider.when('/comentarionoticia/4/newgenerico/:id?', {templateUrl: 'js/app/comentarionoticia/4/xnoticia/newedit.html', controller: 'ComentarionoticiaNewGenerico4Controller', resolve: {auth: authenticationAlumnoPromise}});
 
 
         //comentarioguia------------
@@ -241,7 +244,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/comentarioguia/1/xusuario/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaXusuarioNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/xusuario/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaXusuarioEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/xguia/plistx/:id/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'ComentarioguiaXguiaPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/comentarioguia/1/xguia/newx/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaXguiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/comentarioguia/1/xguia/newx/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaXguiaNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/comentarioguia/1/xguia/editx/:id/:xid', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'ComentarioguiaXguiaEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
 
 

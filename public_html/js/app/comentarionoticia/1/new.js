@@ -34,7 +34,6 @@ moduloComentarionoticia.controller('ComentarionoticiaNew1Controller',
                 $scope.op = "new";
                 $scope.profile = 1;
                 //---
-                $scope.xob = "usuario";
                 $scope.xid = $routeParams.id;
                 //---
                 $scope.status = null;
