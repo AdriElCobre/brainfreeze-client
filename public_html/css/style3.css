@@ -401,7 +401,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-#texto{
+#textojuegos{
 
     margin-left: 2.75%;
     color: #2f575d;
@@ -1105,3 +1105,14 @@ img {
     padding-right: 18px;
 }
 
+#texto {
+    margin: 0px -709.703px 0px 5.20313px;
+    width: 895px;
+    height: 267px;
+}
+
+#titulo {
+    margin: 0px -712.5px 0px 0px;
+    width: 901px;
+    height: 45px;
+}
