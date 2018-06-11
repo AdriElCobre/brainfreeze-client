@@ -41,24 +41,7 @@
                                 <div class="panel panel-default">
                                    
                                     <div class="panel-body">
-                                        <div class="dropdown"  ng-if="debugging">
-                                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                Perfiles de prueba
-                                                <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                <li class="dropdown-header">Administrador:</li>
-
-                                                <li><a href="#"  ng-if="debugging"    ng-click="fill('adri')">adri</a></li>
-
-                                                <li class="dropdown-header">Usuario</li>
-
-                                                <li><a href="#" ng-if="debugging"   ng-click="fill('jose')">jose</a></li>
-                                                <li role="separator" class="divider"></li>
-
-                                                
-                                            </ul>
-                                        </div>
+                                        
                                         <br>
                                         <form name="form" ng-submit="login()" role="form">
                                             <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
