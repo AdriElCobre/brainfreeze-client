@@ -845,7 +845,7 @@ img {
 .font-bliz-light-medium-beige {
     font-family: "Open Sans",Arial,Helvetica,sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     line-height: 1.5em;
     color: #ebdec2;
     text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0,0,0,.8);
@@ -917,6 +917,7 @@ img {
     border: 1px ;
     box-shadow: 4px 6px 11px 4px #959696;
     margin-bottom: 20px;
+    margin-top: 7.5vh;
 }
 
 .post .wrap-ut {
@@ -1142,4 +1143,14 @@ img {
     margin: 0px -712.5px 0px 0px;
     width: 901px;
     height: 45px;
+}
+
+@media (max-width: 720px) { 
+    
+  #cajaswow {
+       margin: 1.0vw;
+} 
+
+
+    
 }

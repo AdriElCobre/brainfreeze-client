@@ -79,18 +79,18 @@
                                         <span ng-if="oMetap.IsRequired">*</span>
                                         {{oMetap.LongName}}
                                     </label>
-                                    
+
                                     <div class="control col-md-{{oMetap.Width}}">
                                         <textarea type="text"
-                                               class="form-control"
-                                               id="{{oMetap.Name}}"
-                                               name="{{oMetap.Name}}"
-                                               ng-model="bean[oMetap.Name]"
-                                               ng-pattern="oMetap.RegexPattern"
-                                               placeholder="{{oMetap.Description}}"
-                                               maxlength="{{oMetap.MaxLength}}"
-                                               ng-required="oMetap.IsRequired"
-                                               />
+                                                  class="form-control"
+                                                  id="{{oMetap.Name}}"
+                                                  name="{{oMetap.Name}}"
+                                                  ng-model="bean[oMetap.Name]"
+                                                  ng-pattern="oMetap.RegexPattern"
+                                                  placeholder="{{oMetap.Description}}"
+                                                  maxlength="{{oMetap.MaxLength}}"
+                                                  ng-required="oMetap.IsRequired"
+                                                  />
                                         <span class="help-block" ng-if="!outerForm[oMetap.Name].$pristine && outerForm[oMetap.Name].$error.required">El campo es obligatorio</span>
                                         <span class="help-block" ng-if="!outerForm[oMetap.Name].$pristine && outerForm[oMetap.Name].$error.pattern">El campo no tiene formato adecuado: Introduzca {{oMetap.RegexHelp}}</span>
                                     </div>
@@ -181,7 +181,7 @@
                             <div class="control-group text-right">
                                 <div class="controls">
                                     <a style="background-color: #93daf8;" class="btn btn-primary" ng-click="save()" ng-disabled="!outerForm.$dirty || !outerForm.$valid">Guardar</a>
-                                    
+
                                     <a class="btn btn-default" ng-click="back()">Volver</a>
                                     <a class="btn btn-default" ng-click="close()">Cerrar</a>
                                 </div>
@@ -195,10 +195,9 @@
                         </form>
                         <div ng-if="status">
                             <div class="alert alert-success" ng-if="response.status == 200">
-                                <h2>{{status}}</h2>
+                                <h2>Se ha creado su {{ob}} satisfactoriamente</h2>
                                 <div class="control-group text-right">
                                     <div class="controls">
-                                        <a style="background-color: #4cae4c" class="btn btn-success" ng-href="{{ob}}/{{profile}}/view/{{bean.id}}">Ver registro</a>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +220,7 @@
                             BEAN:{{bean|json}}<br>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
